@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
 }
+apply from: '../script/config.gradle'
 
 android {
     compileSdk 32
