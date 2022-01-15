@@ -2,5 +2,17 @@ apply plugin: 'com.github.spotbugs'
 
 spotbugs {
     ignoreFailures = true
-    showStackTraces = false
+    effort = 'max'
+    reportLevel = 'medium'
+}
+
+tasks.withType(SpotBugsTask) {
+    classes = fileTree("$project.buildDir/intermediates/javac/")
+    reports {
+        xml.enabled = false
+        html {
+            enabled = true
+            destination = file("$project.buildDir/reports/spotbugs/spotbugs.html")
+        }
+    }
 }

@@ -19,3 +19,7 @@ buildscript {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    SpotBugsTask = com.github.spotbugs.snom.SpotBugsTask
+}
