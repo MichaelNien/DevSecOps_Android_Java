@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'project-report'
 }
 apply from: '../script/config.gradle'
 
