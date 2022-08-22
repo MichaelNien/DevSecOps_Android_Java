@@ -1,7 +1,13 @@
 # DevSecOps Android Java
 
-靜態分析Java
+- 靜態分析Java
 
-[SpotBugs](https://github.com/spotbugs)
+  [SpotBugs](https://github.com/spotbugs)
 
-執行 gradle spotbugsRelease
+  執行 gradle spotbugsRelease
+
+- JUnit 5
+
+- gradle套件相依報表
+
+  project-report
