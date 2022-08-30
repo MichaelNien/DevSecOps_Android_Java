@@ -11,3 +11,5 @@
 - gradle套件相依報表
 
   project-report
+  
+- JaCoCo 產生Test覆蓋率報表
